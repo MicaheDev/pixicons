@@ -2,7 +2,7 @@
   "name": "pixicons",
   "description": "Elevate your design projects with Pixicons, a vibrant collection of pixel art icons tailored for modern user interfaces and user experiences. Perfect for developers and designers looking to infuse a retro aesthetic into their applications, Pixicons offers a unique blend of nostalgia and functionality.",
   "private": false,
-  "version": "1.0.1",
+  "version": "1.9.0",
   "type": "module",
   "main": "dist/pixicons.umd.js",
   "module": "dist/pixicons.es.js",
