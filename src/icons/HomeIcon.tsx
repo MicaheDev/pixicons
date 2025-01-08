@@ -3,7 +3,7 @@ export default function HomeIcon({ size = 40, className = "" }) {
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 -0.5 16 16"
-        shape-rendering="crispEdges"
+        shapeRendering="crispEdges"
         width={size}
         height={size}
         className={className}

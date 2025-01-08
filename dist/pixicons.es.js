@@ -9,15 +9,15 @@ var L = { exports: {} }, D = {};
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-var mr;
+var br;
 function le() {
-  if (mr) return D;
-  mr = 1;
-  var s = yr, M = Symbol.for("react.element"), V = Symbol.for("react.fragment"), E = Object.prototype.hasOwnProperty, A = s.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner, F = { key: !0, ref: !0, __self: !0, __source: !0 };
-  function P(C, f, R) {
+  if (br) return D;
+  br = 1;
+  var s = yr, M = Symbol.for("react.element"), V = Symbol.for("react.fragment"), m = Object.prototype.hasOwnProperty, A = s.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner, F = { key: !0, ref: !0, __self: !0, __source: !0 };
+  function P(C, f, E) {
     var x, j = {}, k = null, $ = null;
-    R !== void 0 && (k = "" + R), f.key !== void 0 && (k = "" + f.key), f.ref !== void 0 && ($ = f.ref);
-    for (x in f) E.call(f, x) && !F.hasOwnProperty(x) && (j[x] = f[x]);
+    E !== void 0 && (k = "" + E), f.key !== void 0 && (k = "" + f.key), f.ref !== void 0 && ($ = f.ref);
+    for (x in f) m.call(f, x) && !F.hasOwnProperty(x) && (j[x] = f[x]);
     if (C && C.defaultProps) for (x in f = C.defaultProps, f) j[x] === void 0 && (j[x] = f[x]);
     return { $$typeof: M, type: C, key: k, ref: $, props: j, _owner: A.current };
   }
@@ -33,10 +33,10 @@ var I = {};
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-var Er;
+var mr;
 function ce() {
-  return Er || (Er = 1, process.env.NODE_ENV !== "production" && function() {
-    var s = yr, M = Symbol.for("react.element"), V = Symbol.for("react.portal"), E = Symbol.for("react.fragment"), A = Symbol.for("react.strict_mode"), F = Symbol.for("react.profiler"), P = Symbol.for("react.provider"), C = Symbol.for("react.context"), f = Symbol.for("react.forward_ref"), R = Symbol.for("react.suspense"), x = Symbol.for("react.suspense_list"), j = Symbol.for("react.memo"), k = Symbol.for("react.lazy"), $ = Symbol.for("react.offscreen"), Q = Symbol.iterator, _r = "@@iterator";
+  return mr || (mr = 1, process.env.NODE_ENV !== "production" && function() {
+    var s = yr, M = Symbol.for("react.element"), V = Symbol.for("react.portal"), m = Symbol.for("react.fragment"), A = Symbol.for("react.strict_mode"), F = Symbol.for("react.profiler"), P = Symbol.for("react.provider"), C = Symbol.for("react.context"), f = Symbol.for("react.forward_ref"), E = Symbol.for("react.suspense"), x = Symbol.for("react.suspense_list"), j = Symbol.for("react.memo"), k = Symbol.for("react.lazy"), $ = Symbol.for("react.offscreen"), Q = Symbol.iterator, _r = "@@iterator";
     function Tr(r) {
       if (r === null || typeof r != "object")
         return null;
@@ -64,7 +64,7 @@ function ce() {
     var Sr = !1, Or = !1, Dr = !1, Ir = !1, Ar = !1, z;
     z = Symbol.for("react.module.reference");
     function Fr(r) {
-      return !!(typeof r == "string" || typeof r == "function" || r === E || r === F || Ar || r === A || r === R || r === x || Ir || r === $ || Sr || Or || Dr || typeof r == "object" && r !== null && (r.$$typeof === k || r.$$typeof === j || r.$$typeof === P || r.$$typeof === C || r.$$typeof === f || // This needs to include all possible module reference object
+      return !!(typeof r == "string" || typeof r == "function" || r === m || r === F || Ar || r === A || r === E || r === x || Ir || r === $ || Sr || Or || Dr || typeof r == "object" && r !== null && (r.$$typeof === k || r.$$typeof === j || r.$$typeof === P || r.$$typeof === C || r.$$typeof === f || // This needs to include all possible module reference object
       // types supported by any Flight configuration anywhere since
       // we don't know which Flight build this will end up being used
       // with.
@@ -88,7 +88,7 @@ function ce() {
       if (typeof r == "string")
         return r;
       switch (r) {
-        case E:
+        case m:
           return "Fragment";
         case V:
           return "Portal";
@@ -96,7 +96,7 @@ function ce() {
           return "Profiler";
         case A:
           return "StrictMode";
-        case R:
+        case E:
           return "Suspense";
         case x:
           return "SuspenseList";
@@ -125,7 +125,7 @@ function ce() {
         }
       return null;
     }
-    var b = Object.assign, S = 0, er, tr, nr, or, hr, ar, sr;
+    var R = Object.assign, S = 0, er, tr, nr, or, hr, ar, sr;
     function ir() {
     }
     ir.__reactDisabledLog = !0;
@@ -161,25 +161,25 @@ function ce() {
             writable: !0
           };
           Object.defineProperties(console, {
-            log: b({}, r, {
+            log: R({}, r, {
               value: er
             }),
-            info: b({}, r, {
+            info: R({}, r, {
               value: tr
             }),
-            warn: b({}, r, {
+            warn: R({}, r, {
               value: nr
             }),
-            error: b({}, r, {
+            error: R({}, r, {
               value: or
             }),
-            group: b({}, r, {
+            group: R({}, r, {
               value: hr
             }),
-            groupCollapsed: b({}, r, {
+            groupCollapsed: R({}, r, {
               value: ar
             }),
-            groupEnd: b({}, r, {
+            groupEnd: R({}, r, {
               value: sr
             })
           });
@@ -274,8 +274,8 @@ function ce() {
       } finally {
         J = !1, U.current = u, Wr(), Error.prepareStackTrace = i;
       }
-      var T = r ? r.displayName || r.name : "", m = T ? N(T) : "";
-      return typeof r == "function" && W.set(r, m), m;
+      var T = r ? r.displayName || r.name : "", b = T ? N(T) : "";
+      return typeof r == "function" && W.set(r, b), b;
     }
     function Br(r, t, n) {
       return ur(r, !1);
@@ -292,7 +292,7 @@ function ce() {
       if (typeof r == "string")
         return N(r);
       switch (r) {
-        case R:
+        case E:
           return N("Suspense");
         case x:
           return N("SuspenseList");
@@ -569,7 +569,7 @@ Check the top-level render call using <` + n + ">.");
       }
     }
     var kr = {};
-    function br(r, t, n, o, i, u) {
+    function Rr(r, t, n, o, i, u) {
       {
         var a = Fr(r);
         if (!a) {
@@ -597,35 +597,35 @@ Check the top-level render call using <` + n + ">.");
               Cr(g, r);
         }
         if (O.call(t, "key")) {
-          var m = w(r), v = Object.keys(t).filter(function(Me) {
+          var b = w(r), v = Object.keys(t).filter(function(Me) {
             return Me !== "key";
           }), Z = v.length > 0 ? "{key: someKey, " + v.join(": ..., ") + ": ...}" : "{key: someKey}";
-          if (!kr[m + Z]) {
+          if (!kr[b + Z]) {
             var ue = v.length > 0 ? "{" + v.join(": ..., ") + ": ...}" : "{}";
             d(`A props object containing a "key" prop is being spread into JSX:
   let props = %s;
   <%s {...props} />
 React keys must be passed directly to JSX without using spread:
   let props = %s;
-  <%s key={someKey} {...props} />`, Z, m, ue, m), kr[m + Z] = !0;
+  <%s key={someKey} {...props} />`, Z, b, ue, b), kr[b + Z] = !0;
           }
         }
-        return r === E ? oe(c) : ne(c), c;
+        return r === m ? oe(c) : ne(c), c;
       }
     }
     function he(r, t, n) {
-      return br(r, t, n, !0);
+      return Rr(r, t, n, !0);
     }
     function ae(r, t, n) {
-      return br(r, t, n, !1);
+      return Rr(r, t, n, !1);
     }
     var se = ae, ie = he;
-    I.Fragment = E, I.jsx = se, I.jsxs = ie;
+    I.Fragment = m, I.jsx = se, I.jsxs = ie;
   }()), I;
 }
-var Rr;
+var Er;
 function fe() {
-  return Rr || (Rr = 1, process.env.NODE_ENV === "production" ? L.exports = le() : L.exports = ce()), L.exports;
+  return Er || (Er = 1, process.env.NODE_ENV === "production" ? L.exports = le() : L.exports = ce()), L.exports;
 }
 var e = fe();
 function pe({ size: s = 40, className: M = "" }) {
@@ -634,7 +634,7 @@ function pe({ size: s = 40, className: M = "" }) {
     {
       xmlns: "http://www.w3.org/2000/svg",
       viewBox: "0 -0.5 16 16",
-      "shape-rendering": "crispEdges",
+      shapeRendering: "crispEdges",
       width: s,
       height: s,
       className: M,
@@ -662,7 +662,7 @@ function ve({ size: s = 40, className: M = "" }) {
     {
       xmlns: "http://www.w3.org/2000/svg",
       viewBox: "0 -0.5 16 16",
-      "shape-rendering": "crispEdges",
+      shapeRendering: "crispEdges",
       width: s,
       height: s,
       className: M,
@@ -698,7 +698,7 @@ function xe({ size: s = 40, className: M = "" }) {
     {
       xmlns: "http://www.w3.org/2000/svg",
       viewBox: "0 -0.5 16 16",
-      "shape-rendering": "crispEdges",
+      shapeRendering: "crispEdges",
       width: s,
       height: s,
       className: M,
@@ -743,7 +743,7 @@ function ge({
     {
       xmlns: "http://www.w3.org/2000/svg",
       viewBox: "0 -0.5 16 16",
-      "shape-rendering": "crispEdges",
+      shapeRendering: "crispEdges",
       width: s,
       height: s,
       className: M,
@@ -787,7 +787,7 @@ function je({
     {
       xmlns: "http://www.w3.org/2000/svg",
       viewBox: "0 -0.5 16 16",
-      "shape-rendering": "crispEdges",
+      shapeRendering: "crispEdges",
       width: s,
       height: s,
       className: M,
@@ -826,7 +826,7 @@ function we({
     {
       xmlns: "http://www.w3.org/2000/svg",
       viewBox: "0 -0.5 16 16",
-      "shape-rendering": "crispEdges",
+      shapeRendering: "crispEdges",
       width: s,
       height: s,
       className: M,
@@ -865,7 +865,7 @@ function Ce({
     {
       xmlns: "http://www.w3.org/2000/svg",
       viewBox: "0 -0.5 16 16",
-      "shape-rendering": "crispEdges",
+      shapeRendering: "crispEdges",
       width: s,
       height: s,
       className: M,
@@ -910,7 +910,7 @@ function ke({
     {
       xmlns: "http://www.w3.org/2000/svg",
       viewBox: "0 -0.5 16 16",
-      "shape-rendering": "crispEdges",
+      shapeRendering: "crispEdges",
       width: s,
       height: s,
       className: M,
@@ -946,7 +946,7 @@ function ke({
     }
   );
 }
-function be({
+function Re({
   size: s = 40,
   className: M = ""
 }) {
@@ -955,7 +955,7 @@ function be({
     {
       xmlns: "http://www.w3.org/2000/svg",
       viewBox: "0 -0.5 16 16",
-      "shape-rendering": "crispEdges",
+      shapeRendering: "crispEdges",
       width: s,
       height: s,
       className: M,
@@ -979,7 +979,7 @@ function be({
     }
   );
 }
-function me({
+function be({
   size: s = 40,
   className: M = ""
 }) {
@@ -988,7 +988,7 @@ function me({
     {
       xmlns: "http://www.w3.org/2000/svg",
       viewBox: "0 -0.5 16 16",
-      "shape-rendering": "crispEdges",
+      shapeRendering: "crispEdges",
       width: s,
       height: s,
       className: M,
@@ -1027,6 +1027,6 @@ export {
   pe as HomeIcon,
   Ce as MailIcon,
   ke as ProfileIcon,
-  be as ProjectsIcon,
-  me as XIcon
+  Re as ProjectsIcon,
+  be as XIcon
 };
