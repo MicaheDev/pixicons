@@ -390,7 +390,7 @@ function u({
   );
 }
 export {
-  d as ArrowRigthTopIcon,
+  d as ArrowRightTopIcon,
   s as BurguerIcon,
   n as DownloadIcon,
   a as GithubIcon,
